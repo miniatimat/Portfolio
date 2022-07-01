@@ -1,9 +1,12 @@
 import React from "react";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Project from "../../components/Project/Project";
+import "./Projects.scss"
 
 export default function Projects(){
   return(
+    <div>
         <div className="div-slide">
           <Swiper
               loop={true}
@@ -35,9 +38,24 @@ export default function Projects(){
               className="mySwiper"
           >
             <section className="section-products ">
-              Projects
+              <SwiperSlide>
+                <Project image ={""} description={"Test Description"} repoLink={"link"}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Project image ={""} description={"Test Description 2"} repoLink={"link"}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Project image ={""} description={"Test Description 3"} repoLink={"link"}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Project image ={""} description={"Test Description 4"} repoLink={"link"}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Project image ={""} description={"Test Description 5"} repoLink={"link"}/>
+              </SwiperSlide>
             </section>
           </Swiper>
       </div>
+    </div>
   )
 }

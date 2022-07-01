@@ -5,17 +5,22 @@ import NavBar from "../../components/NavBar/NavBar";
 
 
 export default function LandingPage() {
+
+  const currentDate = Date.now()
+  const born= Date.UTC(1998, 9, 9, 0,0,0,0)
+  const dt1 = new Date(born);
+  const dt2 = new Date(currentDate);
+  const date = Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate())) / (1000 * 60 * 60 * 24*365));
+
+
+
   return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1> Mateo Miniati: Fullstack Web Developer</h1>
-        </header>
-        <NavBar/>
         <div>
           <h3>About Me:</h3>
           <p>JavaScript Full-Stack Developer.With the capability of developping complete and scalable web applications.</p>
-          <p>I am a very focused person. Relentlessly trying to find the solutions to any kind of problem that may be presented to me, and then, I can effectively pass that knowledge to others. I'm always wanting to learn more and teach what I learn to others</p>
+          <p> I am a graduate from the Soy Henry Fullstack developer course, looking to get into the world of IT</p>
+          <p> I am a {date} year-old with a huge drive to learn, improve and leave my mark on the world</p>
           <>
             <h3 align="left">Languages:</h3>
             <a target="_blank" rel="noreferrer"> < img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
