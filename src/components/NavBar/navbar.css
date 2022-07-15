@@ -1,4 +1,74 @@
-.navbar{
+
+.App-header {
+    background-color: #444444;
+    height: 20vh;
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 3vh;
+    color: white;
 }
+
+.logo{
+    align-content: center;
+    justify-self: right;
+    height: 20vh;
+}
+.title{
+    font-size: 5vh;
+    font-weight: bolder;
+    letter-spacing: 0.5vw;
+    margin-left: 5vw;
+}
+
+.nav{
+    background: #444444;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav li{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+.nav li.active {
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0 2vw;
+}
+
+.nav li:hover{
+    background-color: gray;
+    margin: 0;
+    padding: 0 2vw;
+}
+
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.activeLink{
+    text-decoration: none;
+    color: black;
+}
+

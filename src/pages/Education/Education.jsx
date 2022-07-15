@@ -3,12 +3,12 @@ import "./Education.scss"
 import {Link} from "react-router-dom";
 
 
-const itba = require("../../images/ITBA.jpg")
-const uba = require("../../images/UBA.png")
-const mh = require("../../images/MichaelHam.png")
-const soyHenry = require("../../images/soyHenry.png")
-const esfet = require("../../images/esfet.png")
-const igcse = require("../../images/igcse.jfif")
+const itba = require("../../images/educationCertificates/ITBA.jpg")
+const uba = require("../../images/educationCertificates/UBA.png")
+const mh = require("../../images/educationCertificates/MichaelHam.png")
+const soyHenry = require("../../images/educationCertificates/soyHenry.png")
+const esfet = require("../../images/educationCertificates/esfet.png")
+const igcse = require("../../images/educationCertificates/igcse.jfif")
 
 
 export default function Education(){

@@ -1,0 +1,22 @@
+.projectContainer{
+  margin-left: 2vw;
+}
+
+.projectImageContainer{
+  max-width: 10vw;
+  display: flex;
+  flex-flow: row;
+}
+
+.projectImage{
+  width: 100%;
+}
+
+.projectTextContainer{
+  display: flex;
+  flex-flow: column;
+}
+
+.projectDescription{
+  overflow: hidden;
+}

@@ -13,19 +13,29 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  height: 20vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  font-size: 3vh;
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
+}
+
+.subtitle{
+  font-size: 5vh;
+  font-weight: bolder;
+}
+
+.homeDetails{
+  margin: 2vw 0;
+  justify-content: center;
+}
+
+.description{
+  margin: 0 5vw;
+
+}
+
+.languageList li{
+  display: flex;
+
 }
 
 @keyframes App-logo-spin {
