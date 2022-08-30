@@ -3,6 +3,18 @@ import {Link, useRouteMatch} from "react-router-dom";
 import logo from "../../images/Background.jpg";
 import "./navbar.css"
 
+function CustomLink({to, children, ...props}){
+  const isActive = useRouteMatch({path: to, exact: true})
+  return(
+      <li className={isActive? "active":""} >
+        <Link className={isActive?"activeLink":"link"} to={to} {...props}>
+          {children}
+        </Link>
+
+      </li>
+  )
+}
+
 export default function NavBar(){
   return(
       <div>
@@ -26,14 +38,3 @@ function handleClick(to){
 
 }
 
-function CustomLink({to, children, ...props}){
-  const isActive = useRouteMatch({path: to, exact: true})
-  return(
-      <li className={isActive? "active":""} >
-        <Link className={isActive?"activeLink":"link"} to={to} {...props}>
-          {children}
-        </Link>
-
-      </li>
-  )
-}

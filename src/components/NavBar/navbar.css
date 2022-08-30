@@ -28,12 +28,13 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0;
 }
 
 .nav ul{
     padding: 0;
     margin: 0;
+    height: 9vh;
     list-style: none;
     display: flex;
 }
@@ -42,23 +43,21 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 3vh;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 2vh 2vw;
+    display: inline-block;
+    padding: 3vh 2vw 0;
 }
 
 .nav li.active {
     background-color: whitesmoke;
     color: black;
     margin: 0;
-    padding: 0 2vw;
+    padding: 2vh 2vw 0 ;
 }
 
 .nav li:hover{
     background-color: gray;
     margin: 0;
-    padding: 0 2vw;
+    padding: 2vh 2vw 0;
 }
 
 .link{
